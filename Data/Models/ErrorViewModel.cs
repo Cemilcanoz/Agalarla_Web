@@ -1,4 +1,4 @@
-namespace Agalarla_Web.Models
+namespace Agalarla_Web.Data.Models
 {
     public class ErrorViewModel
     {
