@@ -1,0 +1,3 @@
+﻿mock dosyalrı normal modell listelerinin aynısı sadece daha hızlı çalışır ve test amaçlı kullanılırlar. Mock dosyaları, 
+gerçek veritabanı veya servis çağrıları yerine geçici veriler sağlar. Bu sayede uygulamanın belirli bölümlerini 
+izole ederek test etmek mümkün olur.
