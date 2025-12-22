@@ -1,0 +1,29 @@
+﻿@using Agalarla_Web.Helpers
+@Html.DisplayPrice(150.50m)
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<stock-status count="5"></stock-status>
+<div style="border: 1px solid black; padding: 20px; margin-top: 20px;">
+    <h3>Test Alanı</h3>
+    
+    <p>Fiyat Helper Sonucu: @Html.DisplayPrice(150.50m)</p>
+    
+    <p>Stok Tag Helper Sonucu: <stock-status count="5"></stock-status></p>
+
+    <h4 class="mt-3">Ürün Kartı (custom tag helper)</h4>
+    <div class="d-flex">
+        <product-card name="Siyah Çay" price="45.50" count="12" description="Güzel demlenen çay" image-url="/img/tea.jpg"></product-card>
+        <product-card name="Bisküvi" price="12.99" count="3" description="Atıştırmalık" ></product-card>
+        <product-card name="Kahve" price="85.00" count="0" description="Çekirdek kahve" ></product-card>
+    </div>
+
+    <h4 class="mt-3">İndirimli Fiyat Örneği (custom tag helper)</h4>
+    <discount-price price="100" percent="25"></discount-price>
+</div>
